@@ -1,0 +1,21 @@
+
+
+button, input[type="button"], input[type="submit"] {
+    text-transform: uppercase;
+    font-family: $lora;
+    font-weight: bold;
+    padding: 12px 30px;
+    background: transparent;
+}
+
+.btn {
+    &--primary {
+        border: 2px solid $dark-slate-gray;
+        color: $dark-slate-gray;
+
+        &:hover {
+            background-color: $dark-slate-gray;
+            color: $white;
+        }
+    }
+}

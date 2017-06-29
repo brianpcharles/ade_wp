@@ -1,0 +1,37 @@
+$page-headings-font-size: 2.4rem !default;
+$page-headings-mobile-font-size: 2rem !default;
+
+.container {
+    max-width: $max-site-width;
+    margin-left: auto;
+    margin-right: auto;
+
+    .main-content {
+        @include mobile {
+            margin-top: 100px;
+        }
+        
+        h1, h2, h3 {
+            font-size: $page-headings-mobile-font-size;
+
+            @include desktop {
+                font-size: $page-headings-font-size;
+            }
+        }
+    }
+}
+
+#lightbox-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: $black;
+    @include opacity(.70);
+    z-index: 400;
+
+    display: none;
+}

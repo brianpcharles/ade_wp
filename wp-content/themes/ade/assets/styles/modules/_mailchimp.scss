@@ -1,0 +1,50 @@
+.mailchimp-button-container {
+    margin: 40px 0;
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: .85rem;
+    }
+}
+
+#mailchimp-signup {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+
+    background: $white;
+    border: 20px solid $dark-slate-gray;
+
+    .mc_custom_border_hdr {
+        font-size: 1.5rem;
+        font-family: $lora;
+    }
+
+    #mc_subheader {
+        margin: 10px 0;
+    }
+
+    .mc_required {
+        color: $alert-required;
+    }
+
+    #mc_message {
+        margin: 20px 0;
+
+        .mc_success_msg {
+            color: $sage-green;
+        }
+    }
+
+    #mc-indicates-required {
+        color: $alert-required;
+    }
+}

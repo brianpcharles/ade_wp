@@ -1,0 +1,11 @@
+$ns = c-sidebar;
+
+.#{$ns} {
+    .#{$ns}__widget {
+        h4 {
+            font-size: 1.2rem;
+            font-family: $lori;
+            text-transform: capitalize;
+        }
+    }
+}

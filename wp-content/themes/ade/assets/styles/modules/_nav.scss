@@ -1,0 +1,23 @@
+nav {
+    &#main-menu {
+        margin-top: 15px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                padding: 10px;
+                a {
+                    text-transform: lowercase;
+                    font-family: $lora;
+                }
+            }
+        }
+
+        h3, h4, h5 {
+            font-family: $lora;
+        }
+    }
+}

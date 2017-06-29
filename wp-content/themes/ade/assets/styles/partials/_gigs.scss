@@ -1,0 +1,48 @@
+$ns : "gig";
+
+$gig-link-icon-font-size: 1.2rem;
+.#{$ns} {
+
+    &-container {
+
+        .#{$ns} {
+            &--thumbnail {
+                @extend %archive--thumbnail;
+            }
+
+            &--title {
+                @extend %archive--title;
+            }
+
+            &--start-date {
+                @extend %archive--date;
+            }
+
+            &--excerpt {
+                @extend %archive--excerpt;
+            }
+
+            &--links {
+                width: 50%;
+                display: flex;
+
+                justify-content: flex-start;
+
+                li {
+                    display: inline-flex;
+                    padding: 0 %3 0 0;
+                    margin: $archive-item-default-white-space;
+                    a {
+                        color: $social-link-default-color;
+                        font-size: $gig-link-icon-font-size;
+
+                        &:hover {
+                            color: darken($social-link-default-color, 10%);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

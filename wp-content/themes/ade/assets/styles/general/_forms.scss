@@ -1,0 +1,13 @@
+
+input[type=text],
+input[type=search],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=tel],
+select {
+    height: 40px;
+    line-height: 40px;
+    color: $md-gray;
+    padding: 0 8px;
+}

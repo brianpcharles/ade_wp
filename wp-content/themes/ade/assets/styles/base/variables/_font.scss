@@ -1,0 +1,78 @@
+/**
+Base Font Styles.
+**/
+
+/**Google Fots **/
+@import url('https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro|Italianno');
+
+$lora:          "Lora", serif;
+$source-sans:   "Source Sans Pro", Helvetica, Arial, sans-serif;
+$italianno:     "Italianno", serif;
+$font-name:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size:     1rem;
+$line-height:   1.3;
+$font-weight:   300;
+
+$text-font-default: $source-sans !default;
+$headline-font-default: $lora !default;
+$page-headings-default: $italianno !default;
+
+$social-link-default-color: $steelblue !default;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+span,
+caption,
+div,
+dt,
+dl,
+header,
+footer,
+nav,
+section,
+article {
+    font-family: $font-name;
+    font-weight: $font-weight;
+    color: $asher;
+}
+
+a,
+li,
+p,
+span,
+caption,
+div,
+dt,
+dl,
+header,
+footer,
+nav,
+section,
+article {
+    font-family: $text-font-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $page-headings-default;
+}
+
+a {
+    color: $asher;
+    text-decoration: none;
+
+    &:hover, &:active {
+        color: $dark-slate-gray;
+    }
+}

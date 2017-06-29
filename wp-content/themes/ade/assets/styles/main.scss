@@ -1,0 +1,32 @@
+/**
+ * Main CSS File
+ * Merges all .scss files before they're processed by gulp
+ * included external sources: Bower, Normalize
+ *
+ * @author      Flurin Dürst
+ * @version     1.3
+ * @since       WPSeed 0.1
+ *
+ */
+
+
+@charset 'UTF-8';
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+/* VARS/FUNCTIONS
+/===================================================== */
+@import 'base/base';
+@import 'general/wrapper';
+@import 'general/container';
+@import 'general/forms';
+
+
+@import 'modules/buttons';
+@import 'modules/nav';
+@import 'modules/mailchimp';
+
+@import 'partials/header';
+@import 'partials/archive';
+@import 'partials/gigs';

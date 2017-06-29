@@ -1,0 +1,45 @@
+
+$header-logo-font-size: 35px !default;
+$header-logo-font-family: $italianno !default;
+
+header {
+    text-align: center;
+    background: $black;
+    padding: 11px 0 0 0;
+    margin-bottom: 25px;
+
+    #logo {
+        padding: 0 0 10px;
+        max-width: 50%;
+        margin: 0px auto;
+
+        h1 {
+            font-size: $header-logo-font-size;
+            font-family: $header-logo-font-family;
+            color: $white;
+        }
+
+        @include desktop {
+            min-width: 200px;
+            max-width: 250px;
+            margin: 10px 0;
+
+            h1 {
+                color: $dark-slate-gray;
+            }
+        }
+    }
+
+    @include mobile {
+        position: fixed;
+        height: 56px;
+        width: 100%;
+        z-index: 500;
+    }
+
+    @include desktop {
+        text-align: left;
+        background: none;
+        padding: 0;
+    }
+}

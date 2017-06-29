@@ -1,0 +1,51 @@
+$ns : "archive";
+
+$archive-item-default-white-space: 10px 0 !default;
+
+$archive-title-font-family: $lora !default;
+
+$archive-title-font-size: 1.4rem !default;
+$archive-date-font-size: .9rem !default;
+$archive-content-font-size: 1.25rem !default;
+
+$archive-date-color: $md-gray !default;
+
+
+.#{$ns} {
+    padding: 40px 0;
+    line-height: 1.25rem;
+
+    .item {
+        margin-top: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+%#{$ns}--thumbnail {
+    img {
+        max-width: 100%;
+    }
+}
+
+%#{$ns}--title {
+    margin: $archive-item-default-white-space;
+    font-family: $archive-title-font-family;
+    font-size: $archive-title-font-size;
+
+    a {
+        font-family: $archive-title-font-family;
+    }
+}
+
+%#{$ns}--date {
+    font-size: $archive-date-font-size;
+    margin: $archive-item-default-white-space;
+}
+
+%#{$ns}--excerpt {
+    font-size: $archive-content-font-size;
+    margin: $archive-item-default-white-space;
+}
